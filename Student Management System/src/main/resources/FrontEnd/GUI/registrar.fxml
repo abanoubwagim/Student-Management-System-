@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="reg" prefHeight="465.0" prefWidth="600.0" style="-fx-background-color: #7886C7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Registrar">
+   <children>
+      <Text layoutX="43.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="97.13671875">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="43.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="83.13671875">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="43.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" wrappingWidth="143.4140625">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="43.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:" wrappingWidth="117.13671875">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="43.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birth Year:">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <TextField fx:id="name" layoutX="194.0" layoutY="45.0" prefHeight="39.0" prefWidth="353.0" promptText="Your Name" styleClass="control" stylesheets="@CSS/style.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" layoutX="194.0" layoutY="107.0" prefHeight="39.0" prefWidth="353.0" promptText="Your Email" styleClass="control" stylesheets="@CSS/style.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="birth" layoutX="199.0" layoutY="273.0" prefHeight="39.0" prefWidth="353.0" promptText="Your Birth's Year" styleClass="control" stylesheets="@CSS/style.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="comboBox" layoutX="201.0" layoutY="231.0" prefHeight="25.0" prefWidth="179.0" promptText="No Selected" stylesheets="@CSS/style.css" visibleRowCount="2" />
+      <Button layoutX="92.0" layoutY="393.0" mnemonicParsing="false" onAction="#signIn" prefHeight="39.0" prefWidth="117.0" text="Sign In">
+         <font>
+            <Font name="Baloo" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="410.0" layoutY="393.0" mnemonicParsing="false" onAction="#signUP" prefHeight="39.0" prefWidth="117.0" stylesheets="@CSS/style.css" text="Sign Up">
+         <font>
+            <Font name="Baloo" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="loading" blendMode="DARKEN" fitHeight="54.0" fitWidth="60.0" layoutX="273.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Files/loading.gif" />
+         </image>
+      </ImageView>
+      <Text fx:id="text" layoutX="126.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="365.13671875">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="password" layoutX="194.0" layoutY="163.0" prefHeight="44.0" prefWidth="353.0" promptText="Your Passwod" styleClass="control" stylesheets="@CSS/style.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

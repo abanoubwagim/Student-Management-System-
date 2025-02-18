@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:id="delete" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #7886C7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.delete">
+   <children>
+      <Button layoutX="371.0" layoutY="313.0" mnemonicParsing="false" onAction="#doneToShow" prefHeight="39.0" prefWidth="117.0" text="Done">
+         <font>
+            <Font name="Baloo" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="105.0" layoutY="313.0" mnemonicParsing="false" onAction="#deleteFromDb" prefHeight="39.0" prefWidth="117.0" text="Delete">
+         <font>
+            <Font name="Baloo" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="day" layoutX="199.0" layoutY="129.0" prefHeight="39.0" prefWidth="353.0" promptText="Your Day" styleClass="control" stylesheets="@CSS/style.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="subject" layoutX="199.0" layoutY="67.0" prefHeight="39.0" prefWidth="353.0" promptText="Your Subject" styleClass="control" stylesheets="@CSS/style.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Text layoutX="48.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day:" wrappingWidth="83.13671875">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="47.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject:" wrappingWidth="117.0">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text fx:id="text" layoutX="117.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="365.13671875">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="loading" blendMode="DARKEN" fitHeight="54.0" fitWidth="60.0" layoutX="266.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Files/loading.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

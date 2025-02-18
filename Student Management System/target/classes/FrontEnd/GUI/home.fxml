@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="home" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #7886C7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Home">
+   <children>
+      <Text layoutX="38.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome," wrappingWidth="92.177734375">
+         <font>
+            <Font name="Baloo" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="name" layoutX="130.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="251.177734375">
+         <font>
+            <Font name="Baloo" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="426.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="id" layoutX="458.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="41.13671875">
+         <font>
+            <Font name="Baloo" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="422.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birth Year:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="birthYear" layoutX="526.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="423.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="gender" layoutX="499.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="70.03466796875">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Button layoutX="58.0" layoutY="137.0" mnemonicParsing="false" onAction="#addItem" prefHeight="43.0" prefWidth="70.0" text="ADD">
+         <font>
+            <Font name="Baloo" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="58.0" layoutY="206.0" mnemonicParsing="false" onAction="#showItems" prefHeight="43.0" prefWidth="94.0" text="SHOW">
+         <font>
+            <Font name="Baloo" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="58.0" layoutY="277.0" mnemonicParsing="false" onAction="#signOut" prefHeight="43.0" prefWidth="119.0" text="SIGN OUT">
+         <font>
+            <Font name="Baloo" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

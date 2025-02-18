@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="sign" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #7886C7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignIn">
+   <children>
+      <Text layoutX="49.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="88.13671875">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="49.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <TextField fx:id="email" layoutX="201.0" layoutY="62.0" prefHeight="39.0" prefWidth="273.0" promptText="Your Email" styleClass="control" stylesheets="@CSS/style.css">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font></TextField>
+      <Text fx:id="text" layoutX="55.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="491.0">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font></Text>
+      <Button layoutX="126.0" layoutY="320.0" mnemonicParsing="false" onAction="#signUp" prefHeight="43.0" prefWidth="98.0" text="Sign Up">
+         <font>
+            <Font name="Baloo" size="18.0" />
+         </font></Button>
+      <Button layoutX="331.0" layoutY="320.0" mnemonicParsing="false" onAction="#logIn" prefHeight="43.0" prefWidth="98.0" text="Log In">
+         <font>
+            <Font name="Baloo" size="18.0" />
+         </font></Button>
+      <ImageView fx:id="loading" blendMode="DARKEN" fitHeight="54.0" fitWidth="60.0" layoutX="474.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Files/loading.gif" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="password" layoutX="201.0" layoutY="157.0" prefHeight="44.0" prefWidth="273.0" promptText="Your Passwod" styleClass="control" stylesheets="@CSS/style.css">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

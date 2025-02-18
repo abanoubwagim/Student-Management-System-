@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="show" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #7886C7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Show">
+   <children>
+      <Button layoutX="447.0" layoutY="346.0" mnemonicParsing="false" onAction="#doneToHome" prefHeight="34.0" prefWidth="104.0" text="Done">
+         <font>
+            <Font name="Baloo" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="70.0" layoutY="346.0" mnemonicParsing="false" onAction="#updateToUpdating" prefHeight="34.0" prefWidth="104.0" text="Update">
+         <font>
+            <Font name="Baloo" size="18.0" />
+         </font>
+      </Button>
+      <ListView fx:id="subjectsList" layoutX="33.0" layoutY="26.0" prefHeight="280.0" prefWidth="532.0" />
+      <Button layoutX="248.0" layoutY="346.0" mnemonicParsing="false" onAction="#deleteToDelete" prefHeight="34.0" prefWidth="104.0" text="Delete">
+         <font>
+            <Font name="Baloo" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

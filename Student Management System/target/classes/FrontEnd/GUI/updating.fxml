@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="update" prefHeight="423.0" prefWidth="600.0" style="-fx-background-color: #7886C7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Updating">
+   <children>
+      <Text layoutX="42.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Subject:">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Day:">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Subject:">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Day:">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Text>
+      <TextField fx:id="lastSubject" layoutX="261.0" layoutY="46.0" prefHeight="39.0" prefWidth="235.0" promptText="Last Subject" styleClass="control" stylesheets="@CSS/style.css">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="lastDay" layoutX="261.0" layoutY="109.0" prefHeight="39.0" prefWidth="235.0" promptText="Last Day" styleClass="control" stylesheets="@CSS/style.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="newSubject" layoutX="261.0" layoutY="177.0" prefHeight="39.0" prefWidth="235.0" promptText="New Subject" styleClass="control" stylesheets="@CSS/style.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="newDay" layoutX="261.0" layoutY="239.0" prefHeight="39.0" prefWidth="235.0" promptText="New Day" styleClass="control" stylesheets="@CSS/style.css">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Button layoutX="347.0" layoutY="345.0" mnemonicParsing="false" onAction="#update" prefHeight="43.0" prefWidth="101.0" text="Update">
+         <font>
+            <Font name="Baloo" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="96.0" layoutY="345.0" mnemonicParsing="false" onAction="#backToShow" prefHeight="43.0" prefWidth="101.0" text="Back">
+         <font>
+            <Font name="Baloo" size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="text" layoutX="96.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="438.62060546875">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="loading" blendMode="DARKEN" fitHeight="58.0" fitWidth="130.0" layoutX="488.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Files/loading.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
